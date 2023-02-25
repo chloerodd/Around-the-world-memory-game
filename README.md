@@ -1,4 +1,4 @@
-# Around-the-world-memory-game 🌎
+# Around-the-world-memory-game 🌎 by Chloe Rodriguez 
 Memory card game with flags from around the world (project 1)
 
 ## Game Description
