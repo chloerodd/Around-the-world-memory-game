@@ -11,7 +11,6 @@ Your task is for each player to take turns matching the cars, for each correctly
 
 ## User Stories
 #### MVP Goals
-* As a player, I want to be able to only have 2 cards flip at a time/turn.
 * As a player, I want the back of the card displayed first and be able to flip when clicked on.
 * As a player, I want to have my score go up by 1 point per matched pair.
 * As a player, if a pair is mismatched the cards turn back over.
@@ -22,3 +21,4 @@ Your task is for each player to take turns matching the cars, for each correctly
 * As a player, I want a start game button.
 * As a player, I want to be able to input player names.
 * As a player, I want randomize the card every start to a new game. 
+* As a player, I want to be able to only have 2 cards flip at a time/turn.
