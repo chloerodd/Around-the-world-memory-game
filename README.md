@@ -15,7 +15,8 @@ Your task is for each player to take turns matching the cars, for each correctly
 * As a player, I want to have my score go up by 1 point per matched pair.
 * As a player, if a pair is mismatched the cards turn back over.
 * As a player, when all cards are matched I want the game to be over and the winner to be announced.
-* As a player, when I mismatch the next player will have a chance to go. 
+* As a player, if I get a pair, I get to go again.
+*As a player, if I mismatch the next player will get to go.
 
 #### Stretch Goals
 * As a player, I want an intro/landing screen.
