@@ -8,13 +8,14 @@ This is a two-player memory game created and styled using HTML, CSS, and Vanilla
 Your task is for each player to take turns matching the cars, for each correctly matched pair you will earn one point. For any mismatch you lose your turn. Once all cards have been correctly matched the game will end and the winner will be announced. 
 ## Wire Frame
 ![wireframe](https://imgur.com/woPoY0y.png)
-
+![wireframe](https://imgur.com/QnZ028v.png)
 ## User Stories
 #### MVP Goals
 * As a player, I want the back of the card displayed first and be able to flip when clicked on.
 * As a player, I want to have my score go up by 1 point per matched pair.
 * As a player, if a pair is mismatched the cards turn back over.
 * As a player, when all cards are matched I want the game to be over and the winner to be announced.
+* As a player, when I mismatch the next player will have a chance to go. 
 
 #### Stretch Goals
 * As a player, I want an intro/landing screen.
