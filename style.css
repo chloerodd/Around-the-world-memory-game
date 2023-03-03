@@ -30,14 +30,51 @@ main {
     border: solid 2px black;
     background-position: center;
     margin-bottom: 8px;
+    transform-style: preserve-3d;
+    transition: 0.5s;
 }
 .card:hover {
-    box-shadow: 0px 0px 4px 2px #e3cd05;
+  box-shadow: 0px 0px 4px 2px #e3cd05;
     /* transform: rotateY(180deg);
     transition: transform 0.8s; */
 }
+.card.flip {
+  transform: rotateY(180deg)
+}
 .korean {
-    background-image: url(./images/Flag_of_South_Korea.png);
+   background-image: url(./images/Flag_of_South_Korea.png);
+   backface-visibility: hidden;
+}
+.greatbrit {
+  background-image: url(./images/Flag_of_the_United_Kingdom.png);
+  backface-visibility: hidden;
+}
+.mexico {
+  background-image: url(./images/Flag_of_Mexico_1917.png);
+  backface-visibility: hidden;
+}
+.belgium {
+  background-image: url(./images/Flag_of_Belgium.png);
+  backface-visibility: hidden;
+}
+.tanzania {
+  background-image: url(./images/Flag_of_Tanzania.png);
+  backface-visibility: hidden;
+}
+.chile {
+  background-image: url(./images/Flag_of_Chile.png);
+  backface-visibility: hidden;
+
+}
+.india {
+  background-image: url(./images/Flag_of_India.png);
+  backface-visibility: hidden;
+
+}
+.greenland {
+  background-image: url(./images/Flag_of_Greenland.png);
+  backface-visibility: hidden;
+
 }
 h1 {
     text-align: center;
