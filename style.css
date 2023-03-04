@@ -38,10 +38,19 @@ main {
     /* transform: rotateY(180deg);
     transition: transform 0.8s; */
 }
+.card-front .card-back {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  backface-visibility: hidden;
+}
+.card-back {
+  transform: rotateY(180deg);
+}
 .card.flip {
   transform: rotateY(180deg)
 }
-.korean {
+/* .korean {
    background-image: url(./images/Flag_of_South_Korea.png);
    backface-visibility: hidden;
 }
@@ -75,7 +84,7 @@ main {
   background-image: url(./images/Flag_of_Greenland.png);
   backface-visibility: hidden;
 
-}
+} */
 h1 {
     text-align: center;
     color: black;
