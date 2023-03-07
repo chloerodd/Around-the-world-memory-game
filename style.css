@@ -1,110 +1,141 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
-    display: flex;
-    flex-direction: column;
-    border: solid 2px black;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border: solid 2px black;
+  padding: 10px;
 }
 main {
-    display: flex;
-    border: solid 2px rgba(128, 128, 128, 0.903);
-    height: 100vh;
+  display: flex;
+  border: solid 2px rgba(128, 128, 128, 0.903);
+  height: 100vh;
 }
 .cards-container {
-    display: flex;
-    border: solid 2px rgba(228, 14, 14, 0.903);
-    width: 70%;
-    flex-flow: wrap;
-    justify-content: space-between;
-    padding-top: 8px;
+  display: flex;
+  border: solid 2px rgba(228, 14, 14, 0.903);
+  width: 70%;
+  flex-flow: wrap;
+  justify-content: space-between;
+  padding-top: 8px;
 }
 .card {
-    width: 22%;
-    /* background-image: url(./images/Flag_of_South_Korea.png); */
-    background-size: contain;
-    background-repeat: no-repeat;
-    border: solid 2px black;
-    background-position: center;
-    margin-bottom: 8px;
-    transform-style: preserve-3d;
-    transition: 0.5s;
+  width: 22%;
+  /* background-image: url(./images/Flag_of_South_Korea.png); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: solid 2px black;
+  background-position: center;
+  margin-bottom: 8px;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+
+  position: relative;
+
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
 }
 .card:hover {
   box-shadow: 0px 0px 4px 2px #e3cd05;
-    /* transform: rotateY(180deg);
+  /* transform: rotateY(180deg);
     transition: transform 0.8s; */
 }
-.card-front .card-back {
+
+.card.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card__face {
+  position: absolute;
   width: 100%;
   height: 100%;
-  display: flex;
+  line-height: 260px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
   backface-visibility: hidden;
 }
-.card-back {
+
+.backOfCard {
+  background: url(./images/back_of_card.png);
+  background-size: contain;
+}
+
+.belgium {
+  background: url(./images/Flag_of_Belgium.png);
+  background-size: contain;
   transform: rotateY(180deg);
+  background-repeat: no-repeat;
 }
-.card.flip {
-  transform: rotateY(180deg)
-}
-/* .korean {
-   background-image: url(./images/Flag_of_South_Korea.png);
-   backface-visibility: hidden;
+
+.korean {
+  background-image: url(./images/Flag_of_South_Korea.png);
+  background-size: contain;
+  transform: rotateY(180deg);
+  background-repeat: no-repeat;
 }
 .greatbrit {
   background-image: url(./images/Flag_of_the_United_Kingdom.png);
-  backface-visibility: hidden;
+  background-size: contain;
+  transform: rotateY(180deg);
+  background-repeat: no-repeat;
 }
 .mexico {
   background-image: url(./images/Flag_of_Mexico_1917.png);
-  backface-visibility: hidden;
+  background-size: contain;
+  transform: rotateY(180deg);
+  background-repeat: no-repeat;
 }
-.belgium {
-  background-image: url(./images/Flag_of_Belgium.png);
-  backface-visibility: hidden;
-}
+
 .tanzania {
   background-image: url(./images/Flag_of_Tanzania.png);
-  backface-visibility: hidden;
+  background-size: contain;
+  transform: rotateY(180deg);
+  background-repeat: no-repeat;
 }
 .chile {
   background-image: url(./images/Flag_of_Chile.png);
-  backface-visibility: hidden;
-
+  background-size: contain;
+  transform: rotateY(180deg);
+  background-repeat: no-repeat;
 }
 .india {
   background-image: url(./images/Flag_of_India.png);
-  backface-visibility: hidden;
-
+  background-size: contain;
+  transform: rotateY(180deg);
+  background-repeat: no-repeat;
 }
 .greenland {
   background-image: url(./images/Flag_of_Greenland.png);
-  backface-visibility: hidden;
-
-} */
+  background-size: contain;
+  transform: rotateY(180deg);
+  background-repeat: no-repeat;
+}
 h1 {
-    text-align: center;
-    color: black;
+  text-align: center;
+  color: black;
 }
 .p1 {
-  float: left; 
-  font-size: 20px; 
+  float: left;
+  font-size: 20px;
   text-align: left;
 }
 .p2 {
-    float: right;
-    font-size: 20px;
-    margin-right: 20px;
-    text-align: right;
+  float: right;
+  font-size: 20px;
+  margin-right: 20px;
+  text-align: right;
 }
 /* table {
     margin: auto; /* Center the table */
 
-  
-  /* .card {
+/* .card {
     width: 100px;
     height: 100px;
     background-color: #ccc;
@@ -116,17 +147,17 @@ h1 {
   img {
     max-width: 100%; 
     height: 110%; 
-  } */ 
-  /* div {
+  } */
+/* div {
     width: 30px;
     height: 50px;
   } */
-  /* td {
+/* td {
     width: 100px;
     height: 50px;
     padding: 10px;
   } */
-  /* table {
+/* table {
     width: 250px;
     height: 400px;
   }  */

@@ -1,151 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = stylesheet href = style.css>
-    <script src = "script.js" defer ></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Around the World Memory Game</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header><h1>Around the World Memory Game</h1></header>
     <main>
-        <h2 class="p1">Player One Score:</h2>
-        <div class="cards-container">
-            <div id="card1" class="card korean">
-                <div class="card-front">
-                    <img src="./images/back_of_card.png" alt="front of card">
-                </div>
-                <div class="card-back">
-                    <img src="./images/Flag_of_South_Korea.png" alt="back of card">
-                </div>
-            </div>
-            <div id="card2" class="card greatbrit">
-                <div class="card-front">
-                    <img src="./images/back_of_card.png" alt="front of card">
-                </div>
-                <div class="card-back">
-                    <img src="./images/Flag_of_the_United_Kingdom.png" alt="back of card">
-                </div>
-            </div>
-            <div id="card3" class="card mexico">
-                <div class="card-front">
-                    <img src="./images/back_of_card.png" alt="front of card">
-                </div>
-                <div class="card-back">
-                    <img src="./images/Flag_of_Mexico_1917.png" alt="back of card">
-                </div>
-            </div>
-            <div id="card4" class="card belgium">
-                <div class="card-front">
-                    <img src="./images/back_of_card.png" alt="front of card">
-                </div>
-                <div class="card-back">
-                    <img src="./images/Flag_of_Belgium.png" alt="back of card">
-                </div>
-            </div>
-            <div id="card5" class="card tanzania">
-                <div class="card-front">
-                    <img src="./images/back_of_card.png" alt="front of card">
-                </div>
-                <div class="card-back">
-                    <img src="./images/Flag_of_Tanzania.png" alt="back of card">
-                </div>
-            </div>
-            <div id="card6" class="card chile">
-                <div class="card-front">
-                    <img src="./images/back_of_card.png" alt="front of card">
-                </div>
-                <div class="card-back">
-                    <img src="./images/Flag_of_Chile.png" alt="back of card">
-                </div>
-            </div>
-            <div id="card7" class="card india">
-                <div class="card-front">
-                    <img src="./images/back_of_card.png" alt="front of card">
-                </div>
-                <div class="card-back">
-                    <img src="./images/Flag_of_India.png" alt="back of card">
-                </div>
-            </div>
-            <div id="card8" class="card greenland">
-                <div class="card-front">
-                    <img src="./images/back_of_card.png" alt="front of card">
-                </div>
-                <div class="card-back">
-                    <img src="./images/Flag_of_Greenland.png" alt="back of card">
-                </div>
-            </div>
-            <div id="card9" class="card india">
-                <div class="card-front">
-                    <img src="./images/back_of_card.png" alt="front of card">
-                </div>
-                <div class="card-back">
-                    <img src="./images/Flag_of_India.png" alt="back of card">
-                </div>
-            </div>
-            <div id="card10" class="card belgium">
-                <div class="card-front">
-                    <img src="./images/back_of_card.png" alt="front of card">
-                </div>
-                <div class="card-back">
-                    <img src="./images/Flag_of_Belgium.png" alt="back of card">
-                </div>
-            </div>
-            <div id="card11" class="card chile">
-                <div class="card-front">
-                    <img src="./images/back_of_card.png" alt="front of card">
-                </div>
-                <div class="card-back">
-                    <img src="./images/Flag_of_Chile.png" alt="back of card">
-                </div>
-            </div>
-            <div id="card12" class="card mexico">
-                <div class="card-front">
-                    <img src="./images/back_of_card.png" alt="front of card">
-                </div>
-                <div class="card-back">
-                    <img src="./images/Flag_of_Mexico_1917.png" alt="back of card">
-                </div>
-            </div>
-            <div id="card13" class="card greenland">
-                <div class="card-front">
-                    <img src="./images/back_of_card.png" alt="front of card">
-                </div>
-                <div class="card-back">
-                    <img src="./images/Flag_of_Greenland.png" alt="back of card">
-                </div>
-            </div>
-            <div id="card14" class="card korean">
-                <div class="card-front">
-                    <img src="./images/back_of_card.png" alt="front of card">
-                </div>
-                <div class="card-back">
-                    <img src="./images/Flag_of_South_Korea.png" alt="back of card">
-                </div>
-            </div>
-            <div id="card15" class="card tanzania">
-                <div class="card-front">
-                    <img src="./images/back_of_card.png" alt="front of card">
-                </div>
-                <div class="card-back">
-                    <img src="./images/Flag_of_Tanzania.png" alt="back of card">
-                </div>
-            </div>
-            <div id="card16" class="card greatbrit">
-                <div class="card-front">
-                    <img src="./images/back_of_card.png" alt="front of card">
-                </div>
-                <div class="card-back">
-                    <img src="./images/Flag_of_the_United_Kingdom.png" alt="back of card">
-                </div>
-            </div>
+      <h2 class="p1">Player One Score:</h2>
+      <div class="cards-container">
+        <div class="card">
+          <div class="card__face backOfCard"></div>
+          <div class="card__face belgium"></div>
         </div>
-        <h2 class="p2">Player Two Score: </h2>
-
+        <div class="card">
+          <div class="card__face backOfCard"></div>
+          <div class="card__face korean"></div>
+        </div>
+        <div class="card">
+          <div class="card__face backOfCard"></div>
+          <div class="card__face greatbrit"></div>
+        </div>
+        <div class="card">
+          <div class="card__face backOfCard"></div>
+          <div class="card__face mexico"></div>
+        </div>
+        <div class="card">
+          <div class="card__face backOfCard"></div>
+          <div class="card__face tanzania"></div>
+        </div>
+        <div class="card">
+          <div class="card__face backOfCard"></div>
+          <div class="card__face chile"></div>
+        </div>
+        <div class="card">
+          <div class="card__face backOfCard"></div>
+          <div class="card__face india"></div>
+        </div>
+        <div class="card">
+          <div class="card__face backOfCard"></div>
+          <div class="card__face greenland"></div>
+        </div>
+        <div class="card">
+          <div class="card__face backOfCard"></div>
+          <div class="card__face belgium"></div>
+        </div>
+        <div class="card">
+          <div class="card__face backOfCard"></div>
+          <div class="card__face korean"></div>
+        </div>
+        <div class="card">
+          <div class="card__face backOfCard"></div>
+          <div class="card__face greatbrit"></div>
+        </div>
+        <div class="card">
+          <div class="card__face backOfCard"></div>
+          <div class="card__face mexico"></div>
+        </div>
+        <div class="card">
+          <div class="card__face backOfCard"></div>
+          <div class="card__face tanzania"></div>
+        </div>
+        <div class="card">
+          <div class="card__face backOfCard"></div>
+          <div class="card__face chile"></div>
+        </div>
+        <div class="card">
+          <div class="card__face backOfCard"></div>
+          <div class="card__face india"></div>
+        </div>
+        <div class="card">
+          <div class="card__face backOfCard"></div>
+          <div class="card__face greenland"></div>
+        </div>
+      </div>
+      <h2 class="p2">Player Two Score:</h2>
     </main>
-   
-</body>
+  </body>
 </html>
