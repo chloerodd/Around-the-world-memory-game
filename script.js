@@ -113,5 +113,10 @@ restartBtn.addEventListener("click", () => {
     card.classList.remove("is-flipped");
     card.addEventListener("click", flipCard);
   });
-  shuffleCards();
+  (function shuffle() {
+    cards.forEach((card) => {
+      let randomPos = Math.floor(Math.random() * 8);
+      card.style.order = randomPos;
+    });
+  })();
 });
