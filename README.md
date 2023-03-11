@@ -6,6 +6,10 @@ This is a two-player memory game created and styled using HTML, CSS, and Vanilla
 
 ## How to Play🎮
 Your task is for each player to take turns matching the cars, for each correctly matched pair you will earn one point. For any mismatch you lose your turn. Once all cards have been correctly matched the game will end and the winner will be announced. 
+
+## Live Link
+Play the game [Here](https://chloerodd.github.io/Around-the-world-memory-game/)!
+
 ## Wire Frame
 ![wireframe](https://imgur.com/woPoY0y.png)
 ![wireframe](https://imgur.com/QnZ028v.png)
