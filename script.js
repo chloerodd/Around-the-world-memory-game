@@ -8,11 +8,6 @@ let currentPlayer = 1;
 const scoreDisplay1 = document.getElementsByClassName("p1");
 const scoreDisplay2 = document.getElementsByClassName("p2");
       
-function checkForMatch() {
-  let isMatch = firstCard.dataset.id === secondCard.dataset.id;
-
-   isMatch ? disableCards() : unflipCards();
-}
 
 function flipCard() {
   if (lockBoard) return;
@@ -39,12 +34,12 @@ function checkForMatch() {
   let isMatch = firstCard.dataset.id === secondCard.dataset.id;
           
   if (isMatch) {
-    // increment player 1 score and update score display
+    //player 1 score and update score display
     if (currentPlayer === 1) {
       player1Score++;
       scoreDisplay1[0].textContent = "Player One Score:" + player1Score;
     } 
-    // increment player 2 score and update score display
+    //player 2 score and update score display
     else {
       player2Score++;
       scoreDisplay2[0].textContent = "Player Two Score:" + player2Score;
