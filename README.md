@@ -24,3 +24,7 @@ Your task is for each player to take turns matching the cars, for each correctly
 * As a player, I want to be able to input player names.
 * As a player, I want randomize the card every start to a new game. 
 * As a player, I want to be able to only have 2 cards flip at a time/turn.
+
+#### Credits
+* For the lockboard feature I took inspiration from chatgpt, as well as design approached from stackoverflow and w3 schools. [here](https://stackoverflow.com/questions/65581577/need-help-completing-a-function-for-a-memory-card-game-in-javascript)
+* For the .textContent feature I took inspiration from w3 schools. [here](https://www.w3schools.com/jsref/prop_node_textcontent.asp)
