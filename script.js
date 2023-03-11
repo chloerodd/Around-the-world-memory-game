@@ -1,6 +1,6 @@
 const cards = document.querySelectorAll(".card");
 let hasFlippedCard = false;
-let lockBoard = false;
+let lockBoard = false; //🗒 (locks the board so you can't click on cards)
 let firstCard, secondCard;
 let player1Score = 0;
 let player2Score = 0;
@@ -9,7 +9,7 @@ const scoreDisplay1 = document.getElementsByClassName("p1");
 const scoreDisplay2 = document.getElementsByClassName("p2");
       
 
-function flipCard() {
+function flipTheCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
 
@@ -24,37 +24,37 @@ function flipCard() {
 
     // second card flipped
     secondCard = this;
-    checkForMatch();
+    checkMatch();
 
         
 }
 
 
-function checkForMatch() {
-  let isMatch = firstCard.dataset.id === secondCard.dataset.id;
+function checkMatch() {
+  let isItAMatch = firstCard.dataset.id === secondCard.dataset.id;
           
-  if (isMatch) {
+  if (isItAMatch) {
     //player 1 score and update score display
     if (currentPlayer === 1) {
       player1Score++;
-      scoreDisplay1[0].textContent = "Player One Score:" + player1Score;
+      scoreDisplay1[0].textContent = "Player One Score:" + player1Score; //🗒
     } 
     //player 2 score and update score display
     else {
       player2Score++;
-      scoreDisplay2[0].textContent = "Player Two Score:" + player2Score;
+      scoreDisplay2[0].textContent = "Player Two Score:" + player2Score; //🗒
     }
-    disableCards();
+    disable();
     } else {
     // if no match, switch players
-      currentPlayer = currentPlayer === 1 ? 2 : 1;
-      unflipCards();
+      currentPlayer = currentPlayer === 1 ? 2 : 1; //ternary operator, is a built in if else statement 
+      unflip();
     }
 }
 
-function disableCards() {
-  firstCard.removeEventListener("click", flipCard);
-  secondCard.removeEventListener("click", flipCard);
+function disable() {
+  firstCard.removeEventListener("click", flipTheCard);
+  secondCard.removeEventListener("click", flipTheCard);
           
   if (player1Score + player2Score === cards.length / 2) {
     let message;
@@ -69,33 +69,33 @@ function disableCards() {
     alert(`Game over! ${message}`);
   }
           
-  resetBoard();
+  resetGame();
 }
 
-function unflipCards() {
+function unflip() {
   lockBoard = true;
 
   setTimeout(() => {
     firstCard.classList.remove("is-flipped");
     secondCard.classList.remove("is-flipped");
 
-    resetBoard();
+    resetGame();
     }, 1000);
 }
 
-function resetBoard() {
+function resetGame() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
 }
 
-(function shuffle() {
+(function shuffleCards() {
   cards.forEach((card) => {
-    let randomPos = Math.floor(Math.random() * 8);
-    card.style.order = randomPos;
+    let randomize = Math.floor(Math.random() * 8);
+    card.style.order = randomize;
   });
 })();
 
-cards.forEach((card) => card.addEventListener("click", flipCard));
+cards.forEach((card) => card.addEventListener("click", flipTheCard));
 
 const restartBtn = document.getElementById("restart-btn");
 restartBtn.addEventListener("click", () => {
@@ -111,12 +111,12 @@ restartBtn.addEventListener("click", () => {
   scoreDisplay2[0].textContent = "Player Two Score: 0";
   cards.forEach(card => {
     card.classList.remove("is-flipped");
-    card.addEventListener("click", flipCard);
+    card.addEventListener("click", flipTheCard);
   });
-  (function shuffle() {
+  (function shuffleCards() {
     cards.forEach((card) => {
-      let randomPos = Math.floor(Math.random() * 8);
-      card.style.order = randomPos;
+      let randomize = Math.floor(Math.random() * 8);
+      card.style.order = randomize;
     });
   })();
 });
